@@ -1,2 +1,3 @@
 # Modal
-A modal plugin of javascript
+
+一个纯js的Modal插件
