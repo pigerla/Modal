@@ -2,8 +2,68 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Modal Testing</title>
+    <title>Modal测试</title>
     <link rel="stylesheet" href="../modal.css"/>
+    <style>
+        /* 例子样式 */
+        html
+        {
+            box-sizing: border-box;
+        }
+
+        *
+        {
+            box-sizing: inherit;
+        }
+
+        body
+        {
+            font-family: Helvetica,Arial,san-serif;
+            font-size: 16px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        #content
+        {
+            display: none;
+        }
+
+        .trigger-button
+        {
+            font-size: 17px;
+
+            position: relative;
+            top: 100px;
+
+            display: block;
+
+            margin: auto;
+            padding: 10px 30px;
+
+            cursor: pointer;
+
+            color: #fff;
+            border: 0;
+            border-radius: 3px;
+            outline: none;
+            background: #2ecc71;
+            box-shadow: 0 5px 1px #27ae60;
+        }
+
+        .trigger-button:hover
+        {
+            background: #27ae60;
+            box-shadow: 0 5px 1px #145b32;
+        }
+
+        .trigger-button:active
+        {
+            border-top: 5px solid white;
+            box-shadow: none;
+        }
+    </style>
 </head>
 <body>
 <button id="trigger" class="trigger-button" type="button">启动Modal</button>
